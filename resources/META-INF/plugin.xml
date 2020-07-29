@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>io.github.laomao1997.flushtranslator</id>
+  <name>FlushTransalor</name>
+  <version>1.0</version>
+  <vendor email="zhang.jing.hao@outlook.com" url="https://laomao1997.github.io/">ZHANG Jinghao</vendor>
+
+  <description>
+    This plugin allows developer select words in editor to translate them or add them to the dictionary.
+  </description>
+
+  <change-notes>
+    Beta. Beta. Beta. Beta. Beta. Beta. Beta.
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="FlushTranslator.CreateDictionary" class="io.github.laomao1997.flushtranslator.action.CreateDictionaryAction" text="新建词条"
+            description="手炒翻译: 创建一个新的词条.">
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+    </action>
+    <action id="FlushTranslator.Translate" class="io.github.laomao1997.flushtranslator.action.TranslateAction" text="翻译翻译"
+            description="手炒词典：获取所选内容翻译及释义。">
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+    </action>
+  </actions>
+
+</idea-plugin>
