@@ -9,9 +9,9 @@ public class Constant {
     /** 外网测试环境 */
     private static final String TEST_URL = "http://47.93.58.173:8080/dictionary/dictionary/";
     /** 查询接口地址 */
-    public static final String URL_QUERY = BASE_URL + "query";
+    public static final String URL_QUERY = TEST_URL + "query";
     /** 新建词条接口地址 */
-    public static final String URL_CREATE = BASE_URL + "add";
+    public static final String URL_CREATE = TEST_URL + "add";
     /** 接口类型 */
     public static final String MEDIA_TYPE_JSON_UTF8 = "application/json; charset=utf-8";
     /** 请求异常字符串 */
@@ -31,6 +31,13 @@ public class Constant {
     public static final String JSON_NAME_CN = "name_cn";
     public static final String JSON_NAME_EN = "name_en";
     public static final String JSON_EXPLANATION = "explanation";
+    public static final String JSON_CREATOR = "creator";
+    public static final String JSON_CREATOR_BRANCH = "creator_branch";
+
+    public static final String HTML_TAG_UL = "<ul>";
+    public static final String HTML_TAG_UL_END = "</ul>";
+    public static final String HTML_TAG_LI = "<li>";
+    public static final String HTML_TAG_LI_END = "</li>";
 
     /** 气泡消失的时间 */
     public static final long TIME_BALLOON_FADE_OUT = 10000;

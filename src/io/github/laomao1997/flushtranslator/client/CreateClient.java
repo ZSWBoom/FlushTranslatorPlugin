@@ -4,6 +4,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 import io.github.laomao1997.flushtranslator.Constant;
 import io.github.laomao1997.flushtranslator.model.DataModel;
+import io.github.laomao1997.flushtranslator.util.TextUtil;
 import okhttp3.Call;
 import okhttp3.MediaType;
 import org.json.JSONException;
@@ -58,6 +59,14 @@ public class CreateClient {
         jsonObject.put(Constant.JSON_NAME_CN, dataModel.getNameCn());
         jsonObject.put(Constant.JSON_NAME_EN, dataModel.getNameEn());
         jsonObject.put(Constant.JSON_EXPLANATION, dataModel.getExplanation());
+        String creator = dataModel.getCreator();
+        String creatorBranch = dataModel.getCreatorBranch();
+        if (!TextUtil.isEmpty(creator)) {
+            jsonObject.put(Constant.JSON_CREATOR, creator);
+        }
+        if (!TextUtil.isEmpty(creatorBranch)) {
+            jsonObject.put(Constant.JSON_CREATOR_BRANCH, creatorBranch);
+        }
         return jsonObject;
     }
 
