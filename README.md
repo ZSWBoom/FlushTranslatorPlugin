@@ -19,9 +19,9 @@
 
 ## 获取插件
 
-如果在内网使用，首先在外网[点击此处](https://github.com/laomao1997/FlushTranslatorPlugin/releases/download/0.1/FlushTranslatorPlugin_TEST.zip)下载插件，之后传输至内网，或在内网浏览器输入以下链接下载插件：[www.baidu.com](www.baidu.com)。
+如果在内网使用，首先在外网[点击此处](https://github.com/laomao1997/FlushTranslatorPlugin/releases/download/0.2/FlushTranslatorPlugin_BASE.zip)下载插件，之后传输至内网。
 
-如果在外网使用，[点击此处](https://github.com/laomao1997/FlushTranslatorPlugin/releases/download/0.1/FlushTranslatorPlugin_BASE.zip)下载插件。
+如果在外网使用，[点击此处](https://github.com/laomao1997/FlushTranslatorPlugin/releases/download/0.2/FlushTranslatorPlugin_TEST.zip)下载插件。
 
 ## 安装到 IDE
 
